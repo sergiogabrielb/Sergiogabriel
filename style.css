@@ -34,6 +34,7 @@ html{
 }
 .show-menu .hamburguer{
   right: 16rem;
+  z-index: 160;
 }
 .line{
   width: 100%;
@@ -41,6 +42,7 @@ html{
   background-color: #fff;
   box-shadow: 0.1rem 0.1rem 1px #000;
   transition: transform 1s;
+  z-index: 160;
   
 }
 .show-menu #line1{
