@@ -15,8 +15,10 @@
   --font-secundary: "Josefin Slab", serif;
   --font-action: "Muli", serif;
 }
-html{
+html, body{
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  
 }
 
 .hamburguer{
@@ -86,11 +88,10 @@ header{
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background: none;
 }
 .img-wrapper{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background-color: rgba(0,0,0,0.9);
   animation: zoom 25s;
@@ -108,7 +109,7 @@ header{
 
 .img-wrapper img{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
   opacity: 0.5;
 }
@@ -229,23 +230,11 @@ header{
   background-color: #a044ff;
 }
 
-.conhecimentos{
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  grid-template-columns: repeat(16,1fr);
-  grid-template-rows: repeat(6, 6rem);
-  row-gap: .5rem;
-  text-align: justify;
-  margin-left: 1rem;
-}
 .sessao-conhecimentos{
   background-color: #f5f5f5;
 }
 .sessao-header{
   display: flex;
-  text-align: center;
   align-items: center;
   justify-content: center;
 }
@@ -266,6 +255,7 @@ header{
 
 .conhecimento-header{
   font-size: 2.5rem;
+  margin: 1.5rem;
 }
 
 .conhecimento-header h3{
@@ -277,7 +267,8 @@ header{
 .conhecimento-text{
   font-family: var(--font-secundary);
   margin-top:  1rem;
-  font-size: 1.4rem;
+  text-align: justify;
+  margin: 1.5rem;
 }
 .conhecimento-img-wrapper{
   grid-column: 7 / 11;
@@ -285,13 +276,10 @@ header{
   width: 100%;
 }
 .conhecimento-img-wrapper img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10rem;
-  align-items: center;
-  justify-content: center;
-
+  width: 40%;
+  position: relative;
+  top:50%;
+  left:28%;
 }
 .projetos{
   display: flex;
@@ -468,7 +456,7 @@ header{
   align-items: center;
 }
 .orcamento-wrapper{
-  width: 80%;
+  width: 60%;
   height: 80%;
   background-color: #ffffff99;
   border-radius: 10px;
@@ -478,9 +466,8 @@ header{
 
 .sessao-orcamento h1{
   position: absolute;
-  top: -5.5rem;
+  top: -2.5rem;
   left: 2rem;
-  right: 2rem;
   background: #6a3093;  
   background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
   background: linear-gradient(to left, #E100FF, #7F00FF);
@@ -502,7 +489,7 @@ header{
 
 .sessao-orcamento label{
   font-family: var(--font-secundary);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
 
 }
@@ -514,13 +501,12 @@ header{
   outline: none;
   border-radius: 10px;
   border: none;
-  padding: 0.2 rem;
+  padding: 0.3rem;
 }
 
 .btn-orcamento{
   text-transform: uppercase;
-  font-size: 1.3rem;
-  text-align: center;
+  padding: 1rem;
   cursor: pointer;
   grid-column: 2;
 }
