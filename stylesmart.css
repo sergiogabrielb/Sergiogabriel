@@ -281,40 +281,31 @@ header{
   top:50%;
   left:28%;
 }
-.projetos{
-  display: flex;
-  justify-content: space-evenly;
-}
 .card{
-  width: 18rem;
-  height: 25rem;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 .card-img-wrapper{
-  width: 100%;
-  height: 100%;
   background-color: #262626;
-  border-radius: .5rem;
+  border-radius: 1rem;
 }
 .card-img-wrapper img{
-  object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: .5rem;
   opacity: .8;
-  transition: opacoty .3;
+  transition: opacity .3;
 }
 .card:hover .card-img-wrapper img{
   opacity: .5;
 }
 .card-info{
-  opacity: 0;
-  visibility: hidden;
+  text-align: center;
   position: absolute;
-  bottom: 0;
-  padding: 2rem;
+  top: 22%;
+  margin-left: 10px;
   text-shadow: 0.3 0.2rem 0.3rem rgba(0,0,0,.4);
-  transition: all .3s;
 }
 .card-info h2{
   font-family: var(--font-primary);
@@ -329,11 +320,14 @@ header{
   margin-bottom: 1.5rem;
 }
 .card-info p{
+  text-align: center;
   font-family: var(--font-secundary);
   color: #eee;
-  font-weight: 400;
-  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
   margin-bottom: 2rem;
+  text-shadow:#17181b;
 }
 .btn{
   width: 8rem;
@@ -342,21 +336,20 @@ header{
   background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
   background: linear-gradient(to left, #E100FF, #7F00FF);
   font-family: var(--font-action);
-  font-size: .5rem;
+  font-size: 1.2rem;
   color: #eee;
   border-radius: .5rem;
   border-radius: none;
   box-shadow: 0 .1rem, .8rem rgba(0,0,0,.4);
 }
 .card-info button{
-  width: 8rem;
-  height: 2.5rem;
+  width: 10rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.card:hover .card-info{
-  bottom: 2rem;
-  opacity: 1;
-  visibility: visible;
-}
+
 
 .sessao-contato{
   width: 100%;
@@ -367,14 +360,13 @@ header{
   justify-content: center;
 }
 .contato-wrapper{
-  width: 60%;
+  width: 95%;
   height: 30rem;
   display: flex;
   box-shadow: 0 2rem 3rem rgba(0,0,0,0.5);
 }
 
 .contato-left{
-  width: 35%;
   background: linear-gradient(rgba(15,15,15, 0.6),rgba(22,22,22,0.9)),
   url(imagens/contato.jpg);
 
@@ -382,7 +374,7 @@ header{
 }
   
 .contato-right{
-  width: 65%;
+  width: 72%;
   background-color: #eee;
   padding: 1rem 3rem 3rem 3rem;
 }
@@ -456,8 +448,8 @@ header{
   align-items: center;
 }
 .orcamento-wrapper{
-  width: 60%;
-  height: 80%;
+  width: 95%;
+  height: 85%;
   background-color: #ffffff99;
   border-radius: 10px;
   box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.5);
@@ -466,8 +458,7 @@ header{
 
 .sessao-orcamento h1{
   position: absolute;
-  top: -2.5rem;
-  left: 2rem;
+  top: -4.5rem;
   background: #6a3093;  
   background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
   background: linear-gradient(to left, #E100FF, #7F00FF);
@@ -506,13 +497,12 @@ header{
 
 .btn-orcamento{
   text-transform: uppercase;
-  padding: 1rem;
   cursor: pointer;
   grid-column: 2;
 }
 footer{
   width: 100%;
-  height: 7rem;
+  height: 10rem;
   background-color: #17181b;
   display: flex;
   justify-content: center;
@@ -520,7 +510,7 @@ footer{
 }
 
 .footer-content{
-  width: 60%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -529,6 +519,7 @@ footer{
   font-family: var(--font-secundary);
   color: #a7a7a7;
   font-size: 1.2rem;
+  font-weight: 800;
 }
 .social-list a{
   margin: 0 2rem;
